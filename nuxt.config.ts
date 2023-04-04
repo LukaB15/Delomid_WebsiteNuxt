@@ -4,6 +4,7 @@ export default defineNuxtConfig({
             '@nuxtjs/tailwindcss',
             '@vueuse/nuxt',
             '@nuxt/image-edge',
+            'nuxt-swiper'
           ],
           image: {
             // Options
@@ -31,6 +32,7 @@ export default defineNuxtConfig({
                 }
               ]
             }
-          }
+          },
+
           
 })

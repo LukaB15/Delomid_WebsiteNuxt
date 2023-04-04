@@ -35,10 +35,11 @@ function closeSearchbar(){
       NotActive.value = "block";
 }
 
+const menuOpen = ref(false)
 </script>
 
 <template >
-      <nav class="z-50 bg-[#2C3E50] flex flex-row items-center justify-around text-white sticky top-0 h-24 min-h-full">
+      <nav class="max-lg:hidden z-50 bg-[#2C3E50] flex flex-row items-center justify-around text-white sticky top-0 h-24 min-h-full">
             <div>
               <nuxt-link to="/">
                   <img src="https://www.delomid-it.com/wp-content/uploads/2019/03/Delomid_DATA_RVB_W1_PNG-1024x488.png" :style="{width: `${width}rem`, transition: `0.25s ease-in-out `}" class="hover:opacity-70" />
@@ -53,7 +54,7 @@ function closeSearchbar(){
                               <nuxt-link to="/NosServices/digital-online" >Digital online</nuxt-link>
                         </div>
                   </div>
-                  <nuxt-link to="/Carrière" class="p-4 text-[18px] font-sans hover:text-[#FC4349]">Carrière</nuxt-link>
+                  <nuxt-link to="/Carriere" class="p-4 text-[18px] font-sans hover:text-[#FC4349]">Carrière</nuxt-link>
                   <nuxt-link to="/Contact" class="p-4 text-[18px] font-sans hover:text-[#FC4349]">Contact</nuxt-link>
                   <nuxt-link to="/Blog" class="p-4 text-[18px] font-sans hover:text-[#FC4349]">Blog</nuxt-link>
                   <nuxt-img src="/loupe.png" class="w-6 h-6 mt-5 hover:text-[#FC4349]" @click="expandSearchbar()" :style="{display: `${NotActive}`, transition: `2s ease-in-out `}" />
@@ -63,6 +64,43 @@ function closeSearchbar(){
                   </div>
             </div>
       </nav>
+  <nav class="hidden max-lg:flex flex-row items-center justify-between h-24 bg-[#2C3E50] pb-4">
+    <div class="col-xs-6">
+      <div>
+          <nuxt-link to="/">
+            <img src="https://www.delomid-it.com/wp-content/uploads/2019/03/Delomid_DATA_RVB_W1_PNG-1024x488.png"  class="hover:opacity-70 w-36" />
+          </nuxt-link>
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <div class="flex flex-row">
+            <div class="space-y-2 mr-4" type="button" @click="menuOpen = !menuOpen">
+              <div class="w-8 h-0.5 bg-white"></div>
+              <div class="w-8 h-0.5 bg-white"></div>
+              <div class="w-8 h-0.5 bg-white"></div>
+            </div>
+            <nuxt-img src="/loupe.png" class="w-6 h-6 mr-4" @click="expandSearchbar()" :style="{display: `${NotActive}`, transition: `2s ease-in-out `}" />
+          </div>
+        </div>
+  </nav>
+  <div class="row dropdown" :class="{ 'dropdown-after' : menuOpen }">
+    <ul class="navlist">
+      <li class="navlistitem">
+        <nuxt-link to="/Nosservices">Nos services</nuxt-link>
+      </li>
+      <li class="navlistitem">
+        <nuxt-link to="/Carriere">Carrière</nuxt-link>
+      </li>
+      <li class="navlistitem">
+        <nuxt-link to="/Contact">Contact</nuxt-link>
+      </li>
+      <li class="navlistitem">
+        <nuxt-link to="/Blog">Blog</nuxt-link>
+      </li>
+    </ul>
+  </div>
+
+      
 </template>
 
 <style scoped>
@@ -107,4 +145,91 @@ function closeSearchbar(){
   display: flex;
   flex-direction: column;
 }
+
+.logo1 {
+  color: red;
+}
+
+.logo2 {
+  color: grey;
+}
+
+.logo,
+.hamburger-wrap {
+  width: 100px;
+  height: 100%;
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-wrap {
+  float: right;
+  justify-content: flex-end;
+}
+
+.hamburger {
+  width: 45px;
+  height: 45px;
+  background-color: black;
+  border-radius: 4px;
+}
+
+.hamburger:focus {
+  outline: none;
+}
+
+.hamburger__line,
+.hamburger__middle {
+  display: block;
+  width: 30px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #FFFFFF;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.hamburger__middle {
+  width: 20px;
+  margin-left: 10px;
+}
+
+.dropdown {
+  margin-top: -20px;
+  height: 0px;
+  background-color: #2C3E50;
+  transition: height 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+
+.dropdown-after {
+  height: 18rem;
+  transition: height 0.2s ease;
+}
+
+.navlist {
+  list-style: none;
+}
+
+.navlistitem {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+}
+
+.navlistitem a {
+  color: #FFFFFF;
+}
+
+
+
+
+
 </style>

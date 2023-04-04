@@ -16,7 +16,7 @@ routeSegments.value.reduce((accumulator, segment) => {
 </script>
 
 <template>
-      <nav aria-label="breadcrumb">
+      <nav class="pt-3 pb-4 max-lg:text-[13px] max-lg:w-[90vw]">
   <div class="breadcrumb flex flex-row text-white">
       <p><nuxt-link to="/" class="accueil">Accueil </nuxt-link></p>
     <template v-for="(link, index) in breadcrumbLinks" :key="index">
@@ -31,7 +31,7 @@ routeSegments.value.reduce((accumulator, segment) => {
 <style scoped>
       .breadcrumb {
   border-radius: 0.25rem;
-  padding: 0.75rem 1rem;
+  /* padding: 0.75rem 1rem; */
 }
 
 .breadcrumb-item + .breadcrumb-item::before {

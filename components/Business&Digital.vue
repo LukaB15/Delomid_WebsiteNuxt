@@ -3,16 +3,16 @@
 </script>
 
 <template>
-      <section class="flex justify-center h-[210vh] bg-fixed bg-center relative bg-cover custom-img bg-[url('https://www.delomid-it.com/wp-content/uploads/2018/12/StockSnap_JBZCLRFT3A.jpg')]">
-            <div class="bg-white absolute h-[210vh] w-screen bg-opacity-95 flex flex-col items-center">
+      <section class="flex justify-center h-[210vh] max-lg:h-[470vh] bg-fixed bg-center relative bg-cover custom-img bg-[url('https://www.delomid-it.com/wp-content/uploads/2018/12/StockSnap_JBZCLRFT3A.jpg')]">
+            <div class="bg-white absolute h-[210vh] max-lg:h-[470vh] w-screen bg-opacity-95 flex flex-col items-center">
                   <!-- Titre section -->
                   <div class="flex flex-col items-center pt-16">
-                        <h2 class="text-[34px]">Business Intelligence</h2>
-                        <h5 class="text-[20px] mb-8 mt-6" >Expertise en gestion et traitement de données </h5>
+                        <h2 class="text-[34px] max-lg:text-[25px]">Business Intelligence</h2>
+                        <h5 class="text-[20px] max-lg:text-[15px] mb-8 mt-6" >Expertise en gestion et traitement de données </h5>
                         <div class="h-px w-72 bg-black bg-opacity-10"></div>
                   </div>
-                  <div class="flex flex-row justify-evenly pt-12 pb-20 w-full">
-                        <div class="flex flex-col items-center justify-center">
+                  <div class="flex flex-row max-lg:flex-col justify-evenly pt-12 pb-20 max-lg:pb-12 w-full">
+                        <div class="flex flex-col items-center justify-center max-lg:mb-8">
                               <div class="bg-transparent hover:bg-[#43a9d1] text-[#43a9d1] hover:text-white transition-all duration-150 border border-[#43a9d1] rounded-full w-20 h-20 flex justify-center items-center">
                                     <i class="fa-solid fa-database text-4xl"></i>
                               </div>
@@ -22,7 +22,7 @@
                               </div>
                         </div>
 
-                        <div class="flex flex-col items-center justify-center">
+                        <div class="flex flex-col items-center justify-center max-lg:mb-8">
                               <div class="bg-transparent hover:bg-[#43a9d1] text-[#43a9d1] hover:text-white transition-all duration-150 border border-[#43a9d1] rounded-full w-20 h-20 flex justify-center items-center">
                                     <i class="fa-solid fa-thumbs-up text-4xl"></i>
                               </div>
@@ -32,7 +32,7 @@
                               </div>
                         </div>
 
-                        <div class="flex flex-col items-center justify-center">
+                        <div class="flex flex-col items-center justify-center max-lg:mb-8">
                               <div class="bg-transparent hover:bg-[#43a9d1] text-[#43a9d1] hover:text-white transition-all duration-150 border border-[#43a9d1] rounded-full w-20 h-20 flex justify-center items-center">
                                     <i class="fa-sharp fa-solid fa-suitcase text-4xl"></i>
                               </div>
@@ -42,7 +42,7 @@
                               </div>
                         </div>
 
-                        <div class="flex flex-col items-center justify-center">
+                        <div class="flex flex-col items-center justify-center max-lg:mb-8">
                               <div class="bg-transparent hover:bg-[#43a9d1] text-[#43a9d1] hover:text-white transition-all duration-150 border border-[#43a9d1] rounded-full w-20 h-20 flex justify-center items-center">
                                     <i class="fa-solid fa-chart-simple text-4xl"></i>
                               </div>
@@ -52,14 +52,14 @@
                               </div>
                         </div>
                   </div>
-                  <div class="h-px w-[900px] bg-black bg-opacity-10"></div>
+                  <div class="h-px w-[900px] max-lg:w-72 bg-black bg-opacity-10"></div>
                   <div class="flex flex-col items-center mt-16">
                         <!-- Titre section -->
-                        <h2 class="text-[34px]">Digital Online</h2>
-                        <h5 class="text-[20px] mb-8 mt-6" >Conception d’applications web et mobiles </h5>
+                        <h2 class="text-[34px] max-lg:text-[25px]">Digital Online</h2>
+                        <h5 class="text-[20px] max-lg:text-[15px] mb-8 mt-6" >Conception d’applications web et mobiles </h5>
                         <div class="h-px w-72 bg-black bg-opacity-10"></div>
-                        <div class="flex flex-row justify-evenly pt-12 pb-12 w-full">
-                              <div class="flex flex-col items-center justify-center mr-8">
+                        <div class="flex flex-row max-lg:flex-col justify-evenly pt-12 pb-12 max-lg:pb-4 w-full">
+                              <div class="flex flex-col items-center justify-center mr-8  max-lg:mr-0 max-lg:mb-8">
                                     <div class="bg-transparent hover:bg-[#43a9d1] text-[#43a9d1] hover:text-white transition-all duration-150 border border-[#43a9d1] rounded-full w-20 h-20 flex justify-center items-center">
                                           <i class="fa-solid fa-code text-4xl"></i>
                                     </div>
@@ -69,7 +69,7 @@
                                     </div>
                               </div>
 
-                              <div class="flex flex-col items-center justify-center">
+                              <div class="flex flex-col items-center justify-center  max-lg:mb-8">
                                     <div class="bg-transparent hover:bg-[#43a9d1] text-[#43a9d1] hover:text-white transition-all duration-150 border border-[#43a9d1] rounded-full w-20 h-20 flex justify-center items-center">
                                           <i class="fa-solid fa-magnifying-glass text-4xl"></i>
                                     </div>
@@ -79,7 +79,7 @@
                                     </div>
                               </div>
 
-                              <div class="flex flex-col items-center justify-center ml-8">
+                              <div class="flex flex-col items-center justify-center ml-8  max-lg:ml-0  max-lg:mb-8">
                                     <div class="bg-transparent hover:bg-[#43a9d1] text-[#43a9d1] hover:text-white transition-all duration-150 border border-[#43a9d1] rounded-full w-20 h-20 flex justify-center items-center">
                                           <i class="fa-solid fa-pen-nib text-4xl"></i>
                                     </div>
@@ -89,8 +89,8 @@
                                     </div>
                               </div>
                         </div>
-                        <div class="flex flex-row justify-evenly pt-4 pb-20 w-full">
-                              <div class="flex flex-col items-center justify-center">
+                        <div class="flex flex-row max-lg:flex-col justify-evenly pt-4 pb-20 max-lg:pb-8 w-full">
+                              <div class="flex flex-col items-center justify-center max-lg:mb-8">
                                     <div class="bg-transparent hover:bg-[#43a9d1] text-[#43a9d1] hover:text-white transition-all duration-150 border border-[#43a9d1] rounded-full w-20 h-20 flex justify-center items-center">
                                           <i class="fa-solid fa-store text-4xl"></i>
                                     </div>
@@ -100,7 +100,7 @@
                                     </div>
                               </div>
 
-                              <div class="flex flex-col items-center justify-center">
+                              <div class="flex flex-col items-center justify-center max-lg:mb-8">
                                     <div class="bg-transparent hover:bg-[#43a9d1] text-[#43a9d1] hover:text-white transition-all duration-150 border border-[#43a9d1] rounded-full w-20 h-20 flex justify-center items-center">
                                           <i class="fa-solid fa-palette text-4xl"></i>
                                     </div>
