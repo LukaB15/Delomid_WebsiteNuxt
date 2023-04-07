@@ -36,6 +36,23 @@ function closeSearchbar(){
 }
 
 const menuOpen = ref(false)
+const mobileactive = ref("block")
+const closemobileactive = ref("none")
+
+function activemenu() {
+  mobileactive.value = "none";
+  closemobileactive.value = "block"
+}
+function closeactivemenu(){
+  mobileactive.value = "block"
+  closemobileactive.value = "none"
+}
+function openmenu(){
+  menuOpen.value= true
+}
+function closemenu(){
+  menuOpen.value = false
+}
 </script>
 
 <template >
@@ -74,27 +91,28 @@ const menuOpen = ref(false)
     </div>
     <div class="col-xs-6">
       <div class="flex flex-row">
-            <div class="space-y-2 mr-4" type="button" @click="menuOpen = !menuOpen">
+            <div class="space-y-2 mr-4" type="button" @click="activemenu(),openmenu()" :style="{display: `${mobileactive}`, transition: `2s ease-in-out `}">
               <div class="w-8 h-0.5 bg-white"></div>
               <div class="w-8 h-0.5 bg-white"></div>
               <div class="w-8 h-0.5 bg-white"></div>
             </div>
+            <nuxt-img src="/close.png" class="w-6 h-6 mr-6 z-50 " @click="closeactivemenu(),closemenu()" :style="{display: `${closemobileactive}`, transition: `2s ease-in-out `}"/>
             <nuxt-img src="/loupe.png" class="w-6 h-6 mr-4" @click="expandSearchbar()" :style="{display: `${NotActive}`, transition: `2s ease-in-out `}" />
           </div>
         </div>
   </nav>
   <div class="row dropdown" :class="{ 'dropdown-after' : menuOpen }">
     <ul class="navlist">
-      <li class="navlistitem">
+      <li class="navlistitem" @click="closemenu(),closeactivemenu()">
         <nuxt-link to="/Nosservices">Nos services</nuxt-link>
       </li>
-      <li class="navlistitem">
+      <li class="navlistitem" @click="closemenu(),closeactivemenu()">
         <nuxt-link to="/Carriere">Carrière</nuxt-link>
       </li>
-      <li class="navlistitem">
+      <li class="navlistitem" @click="closemenu(),closeactivemenu()">
         <nuxt-link to="/Contact">Contact</nuxt-link>
       </li>
-      <li class="navlistitem">
+      <li class="navlistitem" @click="closemenu(),closeactivemenu()">
         <nuxt-link to="/Blog">Blog</nuxt-link>
       </li>
     </ul>
