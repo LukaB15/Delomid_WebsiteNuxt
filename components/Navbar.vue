@@ -81,7 +81,7 @@ function closemenu(){
                   </div>
             </div>
       </nav>
-  <nav class="hidden max-lg:flex flex-row items-center justify-between h-24 bg-[#2C3E50] pb-4 sticky top-0 z-50">
+  <nav class="hidden max-lg:flex flex-row items-center justify-between h-24 bg-[#2C3E50] pb-4">
     <div class="col-xs-6">
       <div>
           <nuxt-link to="/" @click="closemenu(),closeactivemenu()">
