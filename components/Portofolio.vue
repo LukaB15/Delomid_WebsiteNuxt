@@ -10,7 +10,7 @@
                   <h5 class="text-[20px] max-lg:text-[15px] mb-8 mt-6" >Aperçu de nos projet </h5>
                   <div class="h-px w-72 bg-black bg-opacity-10"></div>
             </div>
-            <div class="flex flex-row max-lg:flex-col items-start justify-evenly mt-8 mb-16">
+            <div class="flex flex-row max-lg:flex-col items-start max-lg:items-center justify-evenly mt-8 mb-16">
                   <div class="flex flex-col justify-center items-center max-lg:mb-4">
                         <h2 class="text-[24px] max-lg:text-[18px] text-[#2c3e50]">Déploiement Talend</h2>
                         <h5 class="max-lg:text-[15px]">Architecture, conseil, déploiement et coaching</h5>

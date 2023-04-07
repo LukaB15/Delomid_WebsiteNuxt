@@ -3,8 +3,8 @@
 </script>
 
 <template>
-       <section class="flex justify-center h-[150vh] max-lg:h-[350vh] max-lg:w-screen bg-fixed bg-center relative bg-cover custom-img bg-[url('https://www.delomid-it.com/wp-content/uploads/2018/11/rawpixel-567016-unsplash.jpg')]">
-            <div class="bg-black absolute h-[150vh] max-lg:h-[350vh] w-screen max-lg:w-full bg-opacity-80 flex flex-col pl-40 pt-28 max-lg:pl-4">
+       <section class="flex justify-center h-[150vh] max-lg:h-[250vh] max-lg:w-screen bg-fixed bg-center relative bg-cover custom-img bg-[url('https://www.delomid-it.com/wp-content/uploads/2018/11/rawpixel-567016-unsplash.jpg')]">
+            <div class="bg-black absolute h-[150vh] max-lg:h-[250vh] w-screen max-lg:w-full bg-opacity-80 flex flex-col max-lg:items-center pl-40 pt-28 max-lg:pl-0 max-lg:pt-14">
                   <h3 class="text-[34px] text-white">Offres d'emplois</h3>
                   <div class="parent">
                         <JobAnnounce class="div1" />
