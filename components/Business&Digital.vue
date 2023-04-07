@@ -3,8 +3,8 @@
 </script>
 
 <template>
-      <section class="flex justify-center h-[210vh] max-lg:h-[370vh] bg-fixed bg-center relative bg-cover custom-img bg-[url('https://www.delomid-it.com/wp-content/uploads/2018/12/StockSnap_JBZCLRFT3A.jpg')]">
-            <div class="bg-white absolute h-[210vh] max-lg:h-[370vh] w-screen bg-opacity-95 flex flex-col items-center">
+      <section class="flex justify-center h-[210vh] max-lg:h-[380vh] bg-fixed bg-center relative bg-cover custom-img bg-[url('https://www.delomid-it.com/wp-content/uploads/2018/12/StockSnap_JBZCLRFT3A.jpg')]">
+            <div class="bg-white absolute h-[210vh] max-lg:h-[380vh] w-screen bg-opacity-95 flex flex-col items-center">
                   <!-- Titre section -->
                   <div class="flex flex-col items-center pt-16">
                         <h2 class="text-[34px] max-lg:text-[25px]">Business Intelligence</h2>
