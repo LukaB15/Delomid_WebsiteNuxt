@@ -84,7 +84,7 @@ function closemenu(){
   <nav class="hidden max-lg:flex flex-row items-center justify-between h-24 bg-[#2C3E50] pb-4">
     <div class="col-xs-6">
       <div>
-          <nuxt-link to="/">
+          <nuxt-link to="/" @click="closemenu(),closeactivemenu()">
             <img src="https://www.delomid-it.com/wp-content/uploads/2019/03/Delomid_DATA_RVB_W1_PNG-1024x488.png"  class="hover:opacity-70 w-36" />
           </nuxt-link>
       </div>
@@ -225,6 +225,7 @@ function closemenu(){
   overflow: hidden;
   position: absolute;
   width: 100%;
+  z-index: 999;
 }
 
 .dropdown-after {
