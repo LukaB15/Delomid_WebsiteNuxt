@@ -1,6 +1,4 @@
 <script setup>
-import { onMounted, onUnmounted, ref } from 'vue';
-
 // Scroll Logo
 const width = ref(12)
 const handleScroll = () => {
@@ -62,7 +60,7 @@ function closemenu(){
                   <img src="https://www.delomid-it.com/wp-content/uploads/2019/03/Delomid_DATA_RVB_W1_PNG-1024x488.png" :style="{width: `${width}rem`, transition: `0.25s ease-in-out `}" class="hover:opacity-70" />
               </nuxt-link>
                 </div>
-            <div class="flex flex-row">
+            <div class="flex flex-row" >
                   <nuxt-link to="/" class="p-4 text-[18px] font-sans hover:text-[#FC4349]">Home</nuxt-link>
                   <div class="subnav p-4">
                         <nuxt-link to="/NosServices" class="p-4 text-[18px] font-sans hover:text-[#FC4349] subnavbtn">Nos services</nuxt-link>

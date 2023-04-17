@@ -522,7 +522,7 @@
   optionalDependencies:
     ipx "^0.9.9"
 
-"@nuxt/kit@^3.2.0", "@nuxt/kit@^3.2.3", "@nuxt/kit@^3.3.1", "@nuxt/kit@3.3.2":
+"@nuxt/kit@^3.2.0", "@nuxt/kit@^3.3.1", "@nuxt/kit@3.3.2":
   version "3.3.2"
   resolved "https://registry.npmjs.org/@nuxt/kit/-/kit-3.3.2.tgz"
   integrity sha512-mHucMYuN/nVJp0p+L6ezzEls8Y1PerAXCJi01lS3Z5ozz+l2OusEfes8EBxWcy3x0C5465ignXCujQs3/LAvnQ==
@@ -545,6 +545,30 @@
     unctx "^2.1.2"
     unimport "^3.0.4"
     untyped "^1.2.2"
+
+"@nuxt/kit@^3.3.3":
+  version "3.4.1"
+  resolved "https://registry.npmjs.org/@nuxt/kit/-/kit-3.4.1.tgz"
+  integrity sha512-VeH26umZW6Rf4F1QX9nTIuTBp6HeL/MgmKY3+FgQiLD07afgFTLUJZohVE5xU7hb66zCnYvwKxa3JpjXFJZrhQ==
+  dependencies:
+    "@nuxt/schema" "3.4.1"
+    c12 "^1.2.0"
+    consola "^3.0.1"
+    defu "^6.1.2"
+    globby "^13.1.4"
+    hash-sum "^2.0.0"
+    ignore "^5.2.4"
+    jiti "^1.18.2"
+    knitwork "^1.0.0"
+    lodash.template "^4.5.0"
+    mlly "^1.2.0"
+    pathe "^1.1.0"
+    pkg-types "^1.0.2"
+    scule "^1.0.0"
+    semver "^7.4.0"
+    unctx "^2.2.0"
+    unimport "^3.0.6"
+    untyped "^1.3.2"
 
 "@nuxt/postcss8@^1.1.3":
   version "1.1.3"
@@ -578,6 +602,25 @@
     ufo "^1.1.1"
     unimport "^3.0.4"
     untyped "^1.2.2"
+
+"@nuxt/schema@3.4.1":
+  version "3.4.1"
+  resolved "https://registry.npmjs.org/@nuxt/schema/-/schema-3.4.1.tgz"
+  integrity sha512-xhPh9JfVKXRQVfdUT6BKieDTCljBjbIGgGCQnxplVi4FUTWRKUXR7MFwsobr5D9AJpeE0mg5/kRRh5gUX37vAQ==
+  dependencies:
+    c12 "^1.2.0"
+    create-require "^1.1.1"
+    defu "^6.1.2"
+    hookable "^5.5.3"
+    jiti "^1.18.2"
+    pathe "^1.1.0"
+    pkg-types "^1.0.2"
+    postcss-import-resolver "^2.0.0"
+    scule "^1.0.0"
+    std-env "^3.3.2"
+    ufo "^1.1.1"
+    unimport "^3.0.6"
+    untyped "^1.3.2"
 
 "@nuxt/telemetry@^2.1.10":
   version "2.1.10"
@@ -1816,6 +1859,11 @@ consola@^2.15.3:
   resolved "https://registry.npmjs.org/consola/-/consola-2.15.3.tgz"
   integrity sha512-9vAdYbHj6x2fLKC4+oPH0kFzY/orMZyG2Aj+kNylHxKGJ/Ed4dpNyAQYwJOdqO4zdM7XpVHmyejQDcQHrnuXbw==
 
+consola@^3.0.1:
+  version "3.0.2"
+  resolved "https://registry.npmjs.org/consola/-/consola-3.0.2.tgz"
+  integrity sha512-o/Wau2FmZKiQgyp3c3IULgN6J5yc0lwYMnoyiZdEpdGxKGBtt2ACbkulBZ6BUsHy1HlSJqoP4YOyPIJLgRJyKQ==
+
 console-control-strings@^1.0.0, console-control-strings@^1.1.0:
   version "1.1.0"
   resolved "https://registry.npmjs.org/console-control-strings/-/console-control-strings-1.1.0.tgz"
@@ -2726,10 +2774,10 @@ globals@^11.1.0:
   resolved "https://registry.npmjs.org/globals/-/globals-11.12.0.tgz"
   integrity sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==
 
-globby@^13.1.3:
-  version "13.1.3"
-  resolved "https://registry.npmjs.org/globby/-/globby-13.1.3.tgz"
-  integrity sha512-8krCNHXvlCgHDpegPzleMq07yMYTO2sXKASmZmquEYWEmCx6J5UTRbp5RwMJkTJGtcQ44YpiUYUiN0b9mzy8Bw==
+globby@^13.1.3, globby@^13.1.4:
+  version "13.1.4"
+  resolved "https://registry.npmjs.org/globby/-/globby-13.1.4.tgz"
+  integrity sha512-iui/IiiW+QrJ1X1hKH5qwlMQyv34wJAYwH1vrf8b9kBA4sNiif3gKsMHa+BrdnOpEudWjpotfa7LrTzB1ERS/g==
   dependencies:
     dir-glob "^3.0.1"
     fast-glob "^3.2.11"
@@ -2809,10 +2857,10 @@ hasha@^5.2.2:
     is-stream "^2.0.0"
     type-fest "^0.8.0"
 
-hookable@^5.5.0, hookable@^5.5.1:
-  version "5.5.2"
-  resolved "https://registry.npmjs.org/hookable/-/hookable-5.5.2.tgz"
-  integrity sha512-9JZdvGuxXswyoT47M0xrg+IabnK76Ppc7qjf8JdFZu/IaCWflTHVf/ln/GzicraEnPONPIfxgk929rdYiOqv9w==
+hookable@^5.5.0, hookable@^5.5.1, hookable@^5.5.3:
+  version "5.5.3"
+  resolved "https://registry.npmjs.org/hookable/-/hookable-5.5.3.tgz"
+  integrity sha512-Yc+BQe8SvoXH1643Qez1zqLRmbA5rCL+sSmk6TVos0LWVfNIB7PGncdlId77WzLGSIB5KaWgTaNTs2lNVEI6VQ==
 
 html-tags@^3.1.0:
   version "3.2.0"
@@ -3902,13 +3950,13 @@ nuxi@3.3.2:
   optionalDependencies:
     fsevents "~2.3.2"
 
-nuxt-swiper@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.npmjs.org/nuxt-swiper/-/nuxt-swiper-1.0.1.tgz"
-  integrity sha512-NHrPnnxJtM9asKkvxJlyKUhgO/1o3p4ghX+j6xAq1+A2qm8C7l/7WntklQf5t3H7Y7OZXS9e763MXgrCrnZOww==
+nuxt-swiper@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.npmjs.org/nuxt-swiper/-/nuxt-swiper-1.1.0.tgz"
+  integrity sha512-DJFxKLIKvJw8BQ4VL/64Eu/znOL9UlQA07R4vA4fJCUxbk/vUvgrWEX1fRS7z7+vb2tEY8HIAxSLdoRSneFogA==
   dependencies:
-    "@nuxt/kit" "^3.2.3"
-    swiper "^9.1.0"
+    "@nuxt/kit" "^3.3.3"
+    swiper "^9.2.0"
 
 nuxt@^3.0.0, nuxt@^3.3.2:
   version "3.3.2"
@@ -4869,10 +4917,10 @@ semver@^6.3.0:
   resolved "https://registry.npmjs.org/semver/-/semver-6.3.0.tgz"
   integrity sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==
 
-semver@^7.3.4, semver@^7.3.5, semver@^7.3.7, semver@^7.3.8:
-  version "7.3.8"
-  resolved "https://registry.npmjs.org/semver/-/semver-7.3.8.tgz"
-  integrity sha512-NB1ctGL5rlHrPJtFDVIVzTyQylMLu9N9VICA6HSFJo8MCGVTMW6gfpicwKmmK/dAjTOrqu5l63JJOpDSrAis3A==
+semver@^7.3.4, semver@^7.3.5, semver@^7.3.7, semver@^7.3.8, semver@^7.4.0:
+  version "7.4.0"
+  resolved "https://registry.npmjs.org/semver/-/semver-7.4.0.tgz"
+  integrity sha512-RgOxM8Mw+7Zus0+zcLEUn8+JfoLpj/huFTItQy2hsM4khuC1HYRDp0cU482Ewn/Fcy6bCjufD8vAj7voC66KQw==
   dependencies:
     lru-cache "^6.0.0"
 
@@ -5223,10 +5271,10 @@ svgo@^2.7.0:
     picocolors "^1.0.0"
     stable "^0.1.8"
 
-swiper@^9.1.0:
-  version "9.2.0"
-  resolved "https://registry.npmjs.org/swiper/-/swiper-9.2.0.tgz"
-  integrity sha512-lWK9toYumUQss+YuTL+Mt0+8twiMJEyzioER4bbS4rrGHlkeLrDM8uhtAmnpdijELrNscuNUujDgKoMQZfQGlQ==
+swiper@^9.2.0, swiper@^9.2.2:
+  version "9.2.2"
+  resolved "https://registry.npmjs.org/swiper/-/swiper-9.2.2.tgz"
+  integrity sha512-rXicgpm8XRziyZ6TZ4NnZNb6FrhDH0M7X16WoHyzDp5HNHqXGe2BMXBQhfDDGUfhWcSIqeGSvPL9bQzK7Qr+dw==
   dependencies:
     ssr-window "^4.0.2"
 
@@ -5446,15 +5494,15 @@ uncrypto@^0.1.2:
   resolved "https://registry.npmjs.org/uncrypto/-/uncrypto-0.1.2.tgz"
   integrity sha512-kuZwRKV615lEw/Xx3Iz56FKk3nOeOVGaVmw0eg+x4Mne28lCotNFbBhDW7dEBCBKyKbRQiCadEZeNAFPVC5cgw==
 
-unctx@^2.1.2:
-  version "2.1.2"
-  resolved "https://registry.npmjs.org/unctx/-/unctx-2.1.2.tgz"
-  integrity sha512-KK18aLRKe3OlbPyHbXAkIWSU3xK8GInomXfA7fzDMGFXQ1crX1UWrCzKesVXeUyHIayHUrnTvf87IPCKMyeKTg==
+unctx@^2.1.2, unctx@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.npmjs.org/unctx/-/unctx-2.2.0.tgz"
+  integrity sha512-th8S0zg9m35lirV7FYI6AYMKHfmLoEGC87yjuS4MGLS/OZ3Pv1Qx+HyXtnlwteL2YL47xN1ADDKoFWYw3VZoEA==
   dependencies:
     acorn "^8.8.2"
     estree-walker "^3.0.3"
-    magic-string "^0.27.0"
-    unplugin "^1.0.1"
+    magic-string "^0.30.0"
+    unplugin "^1.3.1"
 
 undici@^5.12.0:
   version "5.21.0"
@@ -5483,10 +5531,10 @@ unhead@1.1.25:
     "@unhead/shared" "1.1.25"
     hookable "^5.5.1"
 
-unimport@^3.0.3, unimport@^3.0.4:
-  version "3.0.4"
-  resolved "https://registry.npmjs.org/unimport/-/unimport-3.0.4.tgz"
-  integrity sha512-eoof/HLiNJcIkVpnqc7sJbzKSLx39J6xTaP7E4ElgVQKeq2t9fPTkvJKcA55IJTaRPkEkDq8kcc/IZPmrypnFg==
+unimport@^3.0.3, unimport@^3.0.4, unimport@^3.0.6:
+  version "3.0.6"
+  resolved "https://registry.npmjs.org/unimport/-/unimport-3.0.6.tgz"
+  integrity sha512-GYxGJ1Bri1oqx8VFDjdgooGzeK7jBk3bvhXmamTIpu3nONOcUMGwZbX7X0L5RA7OWMXpR4vzpSQP7pXUzJg1/Q==
   dependencies:
     "@rollup/pluginutils" "^5.0.2"
     escape-string-regexp "^5.0.0"
@@ -5505,7 +5553,7 @@ universalify@^2.0.0:
   resolved "https://registry.npmjs.org/universalify/-/universalify-2.0.0.tgz"
   integrity sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==
 
-unplugin@^1.0.1, unplugin@^1.3.1:
+unplugin@^1.3.1:
   version "1.3.1"
   resolved "https://registry.npmjs.org/unplugin/-/unplugin-1.3.1.tgz"
   integrity sha512-h4uUTIvFBQRxUKS2Wjys6ivoeofGhxzTe2sRWlooyjHXVttcVfV/JiavNd3d4+jty0SVV0dxGw9AkY9MwiaCEw==
@@ -5532,7 +5580,7 @@ unstorage@^1.4.1:
     ofetch "^1.0.1"
     ufo "^1.1.1"
 
-untyped@^1.2.2:
+untyped@^1.2.2, untyped@^1.3.2:
   version "1.3.2"
   resolved "https://registry.npmjs.org/untyped/-/untyped-1.3.2.tgz"
   integrity sha512-z219Z65rOGD6jXIvIhpZFfwWdqQckB8sdZec2NO+TkcH1Bph7gL0hwLzRJs1KsOo4Jz4mF9guBXhsEnyEBGVfw==
