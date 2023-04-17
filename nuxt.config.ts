@@ -32,11 +32,7 @@ export default defineNuxtConfig({
                 }
               ]
             }
-          },
-          plugins: [
-            // ...
-            { src: '~/plugins/swiper.js' },
-          ],
+          }
           
           
 })
