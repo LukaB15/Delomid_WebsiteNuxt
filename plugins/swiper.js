@@ -1,5 +1,5 @@
-import Swiper from 'swiper'
+import Vue from 'vue';
+import Swiper from 'swiper';
+import 'swiper/swiper-bundle.min.css';
 
-export default Swiper(nuxtApp => {
-      nuxtApp.use(Swiper)
-    })
+Vue.use(Swiper);
